@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const GROQ_API_KEY = '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'; // Replace if regenerated
+const GROQ_API_KEY = 'replace your groq api key'; // Replace if regenerated
 
 export const getAISuggestions = async (partial) => {
   try {
