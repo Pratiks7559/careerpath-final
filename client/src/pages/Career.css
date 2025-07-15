@@ -1,0 +1,155 @@
+/* Adding background gradient and animations */
+body.cc {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+}
+
+/* Career container styling */
+.career-container {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  transform: translateZ(0);
+}
+
+/* Title and Icon styling */
+.career-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 15px #ff416c, 0 0 25px #ff416c;
+  animation: neonTextEffect 1.5s infinite alternate;
+}
+
+.career-icon {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+/* Career table container styling */
+.career-table-container {
+  margin-bottom: 2rem;
+}
+
+.career-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header Styling */
+.table-header {
+  background-color: #ff416c;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Table Headers */
+.table-header:hover {
+  background-color: #ff4b2b;
+  cursor: pointer;
+}
+
+/* Table Row Styling */
+.table-row {
+  transition: background-color 0.3s ease;
+}
+
+.table-row:nth-child(even) {
+  background-color: #2b2b2b;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #3a3a3a;
+}
+
+.table-row:hover {
+  background-color: #ff416c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Career chart container styling */
+.career-chart-container {
+  margin-top: 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.career-chart-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Adding glowing effect to chart */
+.career-chart-container {
+  border: 2px solid #ff416c;
+  animation: glowEffect 1.5s infinite alternate;
+}
+
+/* Neon glowing effect */
+@keyframes neonTextEffect {
+  0% {
+    text-shadow: 0 0 15px #ff416c, 0 0 30px #ff416c, 0 0 45px #ff4b2b;
+  }
+  50% {
+    text-shadow: 0 0 30px #ff416c, 0 0 45px #ff4b2b, 0 0 60px #ff4b2b;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff416c, 0 0 30px #ff416c, 0 0 45px #ff4b2b;
+  }
+}
+
+/* Background gradient animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glowing effect on Career Chart */
+@keyframes glowEffect {
+  0% {
+    border-color: #ff416c;
+    box-shadow: 0 0 15px #ff416c, 0 0 30px #ff4b2b, 0 0 45px #ff4b2b;
+  }
+  50% {
+    border-color: #ff4b2b;
+    box-shadow: 0 0 20px #ff4b2b, 0 0 40px #ff416c, 0 0 60px #ff416c;
+  }
+  100% {
+    border-color: #ff416c;
+    box-shadow: 0 0 15px #ff416c, 0 0 30px #ff4b2b, 0 0 45px #ff4b2b;
+  }
+}
+

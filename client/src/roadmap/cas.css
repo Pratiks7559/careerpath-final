@@ -1,0 +1,100 @@
+/* General container */
+.career-selection-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .career-selection-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Dropdown styling */
+  .career-selection-dropdown {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .career-selection-dropdown:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Career details wrapper */
+  .career-details-wrapper {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .career-details-wrapper h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Chart wrapper */
+  .career-chart-wrapper {
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .career-chart-wrapper .chartjs-render-monitor {
+    transition: all 0.3s ease;
+  }
+  
+  /* Apply gradient background to the page */
+  body {
+    background: linear-gradient(135deg, #8e9eab, #eef2f3);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Select animation */
+  .career-selection-dropdown {
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hover effect on Career Details */
+  .career-details-wrapper:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add a soft shadow to the chart container */
+  .career-chart-wrapper {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* Add transition to the chart */
+  .career-chart-wrapper .chartjs-render-monitor {
+    transition: transform 0.3s ease-in-out;
+  }
+  

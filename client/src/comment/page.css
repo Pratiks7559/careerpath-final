@@ -1,0 +1,142 @@
+/* page.css */
+
+/* Base Styles */
+.page-content21 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  color: #333;
+}
+
+/* Loading Screen */
+.loading-screen21 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  gap: 1rem;
+}
+
+.spinner21 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  border-top-color: #3b82f6;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-screen21 p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Forum Page */
+.forum-page21 {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+}
+
+.forum-page21 h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+}
+
+.forum-page21 h2::before {
+  content: "💬";
+  margin-right: 0.75rem;
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-content21 {
+    padding: 1rem;
+  }
+
+  .forum-page21 {
+    padding: 1.5rem;
+  }
+
+  .forum-page21 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .forum-page21 {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .loading-screen21 {
+    height: 50vh;
+  }
+
+  .spinner21 {
+    width: 40px;
+    height: 40px;
+    border-width: 4px;
+  }
+}
+
+/* Animation Enhancements */
+.forum-page21 {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modern Scrollbar (for comment list container) */
+.comment-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.comment-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.comment-list-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.comment-list-container::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}
+
+/* Hover Effects */
+.forum-page21 h2 {
+  transition: color 0.3s ease;
+}
+
+.forum-page21 h2:hover {
+  color: #3b82f6;
+}

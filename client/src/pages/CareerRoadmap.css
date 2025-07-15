@@ -1,0 +1,16 @@
+.roadmap-container {
+    padding: 20px;
+  }
+  
+  .roadmap-section {
+    margin-bottom: 20px;
+  }
+  
+  .roadmap-step, .roadmap-project {
+    margin-left: 20px;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }
+  

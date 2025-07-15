@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "home": {
+    "title": "Discover Your Perfect Career Path",
+    "subtitle": "CareerPath empowers students and professionals to identify the best career aligned with their strengths, interests, and life goals. Get clarity and direction through intelligent assessments and customized growth plans.",
+    "getStarted": "Get Started Free"
+  },
+  "features": {
+    "heading": "Why Choose CareerPath?",
+    "list": {
+      "aiMatching": "🎯 Smart Career Matching: Uses AI to match your profile with the best career options based on deep data models.",
+      "behavioral": "🧠 Behavioral Insights: Analyze your interests, learning style, and soft skills for holistic guidance.",
+      "quizzes": "📊 Interactive Assessments: Enjoy science-backed quizzes that evaluate your strengths, aptitude, and personality.",
+      "roadmap": "📚 Learning Roadmaps: Structured paths with step-by-step recommendations: courses, projects, and internships.",
+      "dashboard": "🧭 Career Dashboard: Track your growth, goals, skills, and learning milestones in a single smart dashboard.",
+      "mentorship": "🤝 Mentor Connect: Schedule 1:1 sessions with industry experts for advice, motivation, and career insights.",
+      "analytics": "📈 Real-World Analytics: Explore demand, salary projections, skills gap, and market trends before you decide."
+    }
+  },
+  "about": {
+    "heading": "About CareerPath",
+    "p1": "CareerPath is your AI-powered career navigator built for today’s learners and tomorrow’s leaders. Whether you’re a high school student choosing your stream, a college graduate exploring industries, or a professional looking to switch careers — we’re here to guide you.",
+    "p2": "Our team of psychologists, data scientists, and career coaches work to create a personalized and reliable system that combines psychometrics, real-time job market data, and human mentorship to help you make smart choices.",
+    "p3": "We're on a mission to redefine career guidance by making it accessible, data-driven, and aligned with your individuality."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "q1": {
+      "question": "📝 How do I sign up?",
+      "answer": "Create an account by clicking 'Get Started Free' and filling in your full name, email, and password. You’ll instantly gain access to assessments and tools."
+    },
+    "q2": {
+      "question": "🔐 What if I forget my password?",
+      "answer": "Go to the login page and click “Forgot Password”. You’ll get a secure link on your email to reset your password quickly."
+    },
+    "q3": {
+      "question": "🧠 What is the Career Assessment Quiz?",
+      "answer": "A powerful quiz that evaluates your interests, personality, aptitude, and work style to suggest top-fit careers and domains for you."
+    },
+    "q4": {
+      "question": "🗺️ What is a Career Roadmap?",
+      "answer": "A personalized action plan that includes the skills you need, relevant certifications, learning sources, and steps to land your dream job."
+    },
+    "q5": {
+      "question": "👥 Can I interact with real mentors?",
+      "answer": "Yes! You can attend mentor sessions, ask questions in webinars, and schedule career calls with experts in your chosen fields."
+    },
+    "q6": {
+      "question": "📱 Is CareerPath available on mobile?",
+      "answer": "Currently, we’re optimized for web, but a mobile app is under development. You can still access everything through your mobile browser."
+    }
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "email": "📧 Email: support@careerpath.com",
+    "phone": "📞 Phone: +91 98765 43210",
+    "address": "📍 Address: 123 Career Avenue, Knowledge City, Mumbai, India",
+    "partnership": "💬 For partnerships or media, contact: partners@careerpath.com"
+  },
+  "footer": {
+    "copyright": " All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "contact": "Contact"
+  },
+  "privacyPolicy": {
+    "heading": "Privacy Policy",
+    "p1": "We are committed to safeguarding your data. CareerPath collects limited personal details to enhance your career experience. This includes your email, quiz responses, and profile preferences.",
+    "p2": "Your data is encrypted, never sold, and only used to personalize your experience. You can request to delete your data anytime.",
+    "p3": "We comply with international data privacy laws and never spam your inbox. For questions, reach out to support@careerpath.com.",
+    "close": "Close"
+  },
+  "terms": {
+    "heading": "Terms & Conditions",
+    "p1": "By signing up, you agree to use CareerPath ethically and only for personal career guidance. Sharing login credentials or reproducing content is prohibited.",
+    "p2": "CareerPath is not liable for decisions made solely on the platform. Career suggestions are educational in nature and do not guarantee employment.",
+    "p3": "Your continued use signifies acceptance of updated policies and guidelines.",
+    "close": "Close"
+  }
+}

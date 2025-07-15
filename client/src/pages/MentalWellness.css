@@ -1,0 +1,161 @@
+/* =========================
+   Ultra-Level Mental Wellness CSS
+   ========================= */
+
+body.mental {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+  color: #2c3e50;
+}
+
+/* Container */
+.mental-wellness-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+  animation: fadeIn 0.6s ease-in;
+}
+
+.mental-wellness-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Sections */
+.section {
+  background: white;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.07);
+}
+
+.section h3 {
+  color: #1a237e;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* Affirmation */
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: #00695c;
+  border-left: 4px solid #4db6ac;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* Audio */
+.audio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.audio-item {
+  background: #e0f7fa;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: inset 2px 2px 5px #c2e9e9, inset -2px -2px 5px #ffffff;
+}
+
+.audio-item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #004d40;
+}
+
+/* Videos */
+.refresh-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #1e88e5;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Articles & Resources */
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.section a {
+  text-decoration: none;
+  color: #0d47a1;
+  transition: color 0.3s;
+}
+
+.section a:hover {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mental-wellness-container {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

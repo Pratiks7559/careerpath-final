@@ -1,0 +1,327 @@
+/* res.css */
+
+/* Base Styles */
+:root {
+  --primary-color: #3498db;
+  --primary-dark: #2980b9;
+  --secondary-color: #2ecc71;
+  --secondary-dark: #27ae60;
+  --danger-color: #e74c3c;
+  --danger-dark: #c0392b;
+  --light-gray: #ecf0f1;
+  --medium-gray: #bdc3c7;
+  --dark-gray: #7f8c8d;
+  --text-color: #2c3e50;
+  --border-radius: 6px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f5f7fa;
+}
+
+/* Container */
+.resume-form-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Title */
+.resume-form-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* Error Message */
+.resume-form-error {
+  background-color: #fdecea;
+  color: var(--danger-dark);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--danger-color);
+}
+
+/* Form */
+.resume-form {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+.resume-form-section {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 1.5rem;
+}
+
+.resume-form-section:last-child {
+  border-bottom: none;
+}
+
+.resume-form-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.resume-form-section-header h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.resume-form-section-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+/* Form Fields */
+.resume-form-field {
+  margin-bottom: 1.2rem;
+}
+
+.resume-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.resume-form-input,
+.resume-form-select,
+.resume-form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.resume-form-input:focus,
+.resume-form-select:focus,
+.resume-form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.resume-form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Row/Column Layout */
+.resume-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resume-form-col {
+  flex: 1;
+}
+
+/* Checkbox */
+.resume-form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.resume-form-checkbox-input {
+  margin-right: 0.5rem;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+}
+
+.resume-form-checkbox-label {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+}
+
+/* Buttons */
+.resume-form-add-btn,
+.resume-form-remove-btn,
+.resume-form-submit-btn {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.resume-form-add-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.resume-form-add-btn:hover {
+  background-color: var(--secondary-dark);
+}
+
+.resume-form-remove-btn {
+  background-color: var(--danger-color);
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.resume-form-remove-btn:hover {
+  background-color: var(--danger-dark);
+}
+
+.resume-form-submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+  display: block;
+  margin: 2rem auto 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.resume-form-submit-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.resume-form-submit-btn:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+/* Items (Education, Experience, etc.) */
+.resume-form-item {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.resume-form-item-title {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.3rem;
+}
+
+.resume-form-item-date,
+.resume-form-item-desc,
+.resume-form-item-tech,
+.resume-form-item-org,
+.resume-form-item-url,
+.resume-form-item-marks {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 0.2rem;
+}
+
+/* Skills */
+.resume-form-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.resume-form-skill-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.resume-form-skill-remove {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.resume-form-skill-remove:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.resume-form-skill-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.resume-form-skill-add-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.resume-form-skill-add-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .resume-form-container {
+    padding: 0 0.5rem;
+  }
+  
+  .resume-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-form-skill-input-group {
+    flex-direction: column;
+  }
+  
+  .resume-form-skill-add-btn {
+    padding: 0.7rem;
+  }
+}

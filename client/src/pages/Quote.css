@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root {
+  --neon-blue: #00e5ff;
+  --neon-pink: #ff00ff;
+  --dark-bg: #0f0f0f;
+  --quote-shadow: rgba(0, 255, 255, 0.5);
+}
+
+
+body.reggi {
+  background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.motivational-quote {
+  padding: 40px 30px;
+  margin: 50px auto;
+  max-width: 700px;
+  background: #111;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow:
+    0 0 15px var(--neon-blue),
+    0 0 25px var(--neon-pink),
+    inset 0 0 10px var(--neon-blue);
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+  animation: fadeInUp 1s ease-out, floatQuote 8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* .motivational-quote::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, var(--neon-blue), var(--neon-pink), var(--neon-blue));
+  animation: rotateBorder 12s linear infinite;
+  opacity: 0.06;
+  z-index: 0;
+} */
+
+
+.quote-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--neon-blue);
+  text-shadow: 0 0 8px var(--neon-blue), 0 0 12px var(--neon-pink);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+
+.quote-text:hover {
+  transform: scale(1.02) translateY(-3px);
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-blue);
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+@keyframes floatQuote {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateX(1deg);
+  }
+}
+
+
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .motivational-quote {
+    padding: 25px 20px;
+    margin: 30px 10px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+}

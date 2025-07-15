@@ -1,0 +1,113 @@
+/* General container for career details */
+.career-details-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .career-details-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Career details section */
+  .career-details-section {
+    margin-bottom: 20px;
+  }
+  
+  .career-details-key {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Handling nested objects */
+  .career-details-object-container {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #eee;
+    margin-top: 10px;
+  }
+  
+  .career-details-object-item {
+    font-size: 16px;
+    color: #555;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .career-details-object-item:hover {
+    color: #4CAF50;
+    transform: translateX(5px);
+  }
+  
+  /* Handling list items */
+  .career-details-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .career-details-list-item {
+    font-size: 16px;
+    color: #555;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .career-details-list-item:hover {
+    color: #4CAF50;
+    transform: translateX(5px);
+  }
+  
+  /* Prettify data (bold and color) */
+  .career-details-container span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* Formatting of career key */
+  .career-details-key {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 12px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+  
+  /* Adjust font styles for overall readability */
+  .career-details-container {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .career-details-container span {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .career-details-container {
+      padding: 15px;
+    }
+  
+    .career-details-key {
+      font-size: 20px;
+    }
+  
+    .career-details-object-item {
+      font-size: 14px;
+    }
+  
+    .career-details-list-item {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,46 @@
+/* LanguageSelector.css */
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 4px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.language-selector:hover {
+  transform: scale(1.02);
+  border-color: #00adb5;
+}
+
+.language-selector label {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: default;
+}
+
+.language-selector select {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 10px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.language-selector select option {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}

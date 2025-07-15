@@ -1,0 +1,90 @@
+.cp-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.15);
+    animation: fadeInLogo 1s ease-in-out;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .cp-logo-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+    position: relative;
+  }
+  
+  .cp-map-pin {
+    font-size: 2.5rem;
+    animation: pulseGlow 2s infinite ease-in-out;
+    color: #00ffe7;
+    filter: drop-shadow(0 0 8px #00ffe7);
+  }
+  
+  .cp-road-line {
+    width: 3px;
+    height: 40px;
+    background: #00ffe7;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 8px #00ffe7;
+  }
+  
+  .cp-path-dot {
+    width: 12px;
+    height: 12px;
+    background: #00ffe7;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00ffe7;
+  }
+  
+  .cp-logo-text-block {
+    text-align: left;
+  }
+  
+  .cp-logo-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffe7;
+  }
+  
+  .cp-logo-title span {
+    color: #00ffe7;
+    text-shadow: 0 0 12px #00ffe7;
+  }
+  
+  .cp-logo-subtitle {
+    font-size: 1.2rem;
+    color: #d4faff;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 0.4rem;
+  }
+  
+  @keyframes fadeInLogo {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      transform: scale(1);
+      filter: drop-shadow(0 0 6px #00ffe7);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 12px #00ffe7);
+    }
+  }
+  

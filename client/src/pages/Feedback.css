@@ -1,0 +1,189 @@
+.feedback-form-container {
+    background: linear-gradient(145deg, rgba(25, 25, 45, 0.95), rgba(15, 15, 35, 0.95));
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid #8f94fb;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .feedback-form-container::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #8f94fb, #4e54c8, #8f94fb);
+    z-index: -1;
+    border-radius: 22px;
+    /* animation: rotateBorder 8s linear infinite; */
+    opacity: 0.5;
+  }
+  
+  @keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .feedback-form-title {
+    color: #8f94fb;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px rgba(143, 148, 251, 0.3);
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes titleGlow {
+    from { text-shadow: 0 0 10px rgba(143, 148, 251, 0.3); }
+    to { text-shadow: 0 0 25px rgba(143, 148, 251, 0.7); }
+  }
+  
+  .feedback-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .feedback-textarea {
+    background: rgba(30, 30, 50, 0.7);
+    border: 2px solid #4e54c8;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 12px;
+    min-height: 150px;
+    resize: vertical;
+    transition: all 0.3s ease;
+  }
+  
+  .feedback-textarea:focus {
+    border-color: #8f94fb;
+    box-shadow: 0 0 20px rgba(143, 148, 251, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .rating-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .rating-label {
+    color: #e6e6e6;
+    font-size: 1.1rem;
+  }
+  
+  .rating-select {
+    background: rgba(143, 148, 251, 0.1);
+    border: 2px solid #8f94fb;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    appearance: none;
+    transition: all 0.3s ease;
+  }
+  
+  .rating-select:hover {
+    background: rgba(143, 148, 251, 0.2);
+    box-shadow: 0 0 15px rgba(143, 148, 251, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .submit-button {
+    background: linear-gradient(45deg, #8f94fb, #4e54c8);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(143, 148, 251, 0.5);
+  }
+  
+  .submit-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transform: rotate(45deg);
+    animation: buttonShine 3s infinite;
+  }
+  
+  @keyframes buttonShine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) rotate(45deg); }
+  }
+  
+  .response-message {
+    color: #8f94fb;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background: rgba(25, 25, 45, 0.7);
+    border-radius: 8px;
+    border: 1px solid #8f94fb;
+    animation: messagePop 0.5s ease;
+  }
+  
+  @keyframes messagePop {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .feedback-form-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .feedback-form-title {
+      font-size: 1.5rem;
+    }
+    
+    .rating-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .co{
+    background-color: springgreen;
+    color: rgb(239, 19, 191);
+    font-size: 1.5rem;
+  }
+  /* .feedback-footer-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff9800;
+  color: #fff;
+  border-radius: 50%;
+  padding: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  z-index: 999;
+}
+
+.feedback-footer-fab:hover {
+  transform: scale(1.1);
+  background-color: #f57c00;
+} */
