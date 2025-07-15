@@ -3,7 +3,7 @@ import express from 'express';
 import axios from 'axios';
 
 const router = express.Router();
-const GEMINI_API_KEY = 'AIzaSyB5yjnjpT9p897NyL_GbSIChkRd_9TeR7M'; // put your actual key here
+const GEMINI_API_KEY = 'youtube api '; // put your actual key here
 
 router.post('/', async (req, res) => {
   const prompt = req.body.prompt;
