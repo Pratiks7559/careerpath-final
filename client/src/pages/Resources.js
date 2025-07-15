@@ -32,7 +32,7 @@ function Resources() {
     try {
       const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
-          key: 'AIzaSyDG_dmav-51l0u632mrT2lWFiOiHkt_dn8',
+          key: 'youtube api key',
           part: 'snippet',
           type: 'video',
           q: 'career guidance tips opportunities growth success',
